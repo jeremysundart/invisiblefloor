@@ -1,0 +1,76 @@
+.logo_box>img{
+  width: 3rem;
+}
+main{
+  margin-top: 3rem;
+  .card_box{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .content_box{
+    margin-top: 4rem;
+    .title_box{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    .subtitle_box{
+      margin-top: 2rem;
+      margin-bottom: 0rem;
+    }
+  }
+}
+footer{
+  position: relative;
+  margin-top: 4rem;
+  height: 30rem;
+  overflow: hidden;
+  .footer_box{
+    width: 100%;
+    >img{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      width: 100%;
+    }
+  }
+  .footer_box_cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    h2, h4{
+      color: #fff;
+    }
+    h2{
+      margin-bottom: 2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid #fff;
+    }
+    h4{
+      margin-bottom: 1rem;
+    }
+    .contact_content{
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  main .card_box{
+    width: 80%;
+    margin: 1rem auto 1rem auto;
+  }
+  footer .footer_box > img{
+    height: 100%;
+    width: auto;
+  }
+}
